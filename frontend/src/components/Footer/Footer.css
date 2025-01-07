@@ -1,0 +1,78 @@
+.footer {
+    color: #d9d9d9;
+    background-color: #323232;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers all content horizontally */
+    gap: 20px;
+    padding: 20px 8vw;
+    padding-top: 80px;
+    margin-top: 100px;
+  }
+  
+  .footer-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 80px;
+    justify-content: center; /* Ensures content inside is centered */
+  }
+  
+  .footer-content-left {
+    text-align: center; /* Center text and logo within this column */
+  }
+  
+  .footer img {
+    width: 120px; /* Adjust logo size as needed */
+    height: auto; /* Keeps the aspect ratio */
+    display: block;
+    margin: 0 auto; /* Centers the logo horizontally */
+    padding: 10px 0;
+  }
+  
+  .footer-content-left,
+  .footer-content-right,
+  .footer-content-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ensures the content aligns in the center */
+    gap: 20px;
+  }
+  
+  .footer-content-left li,
+  .footer-content-right li,
+  .footer-content-center li {
+    list-style: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .footer-content-right h2,
+  .footer-content-center h2 {
+    color: white;
+  }
+  
+  .footer-social-icons img {
+    width: 40px;
+    margin-right: 15px;
+  }
+  
+  .footer hr {
+    width: 100%;
+    height: 2px;
+    margin: 20px 0px;
+    background-color: gray;
+    border: none;
+  }
+  
+  @media (max-width: 750px) {
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+    }
+    .footer-copyright {
+      text-align: center;
+    }
+  }
+  
